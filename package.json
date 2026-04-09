@@ -1,0 +1,26 @@
+{
+  "name": "lms-chat-server",
+  "version": "1.0.0",
+  "description": "Production-ready real-time chat server for LMS — Socket.IO + Redis + MySQL + Sanctum",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@socket.io/redis-adapter": "^8.3.0",
+    "dotenv": "^16.4.5",
+    "ioredis": "^5.3.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.9.7",
+    "socket.io": "^4.7.5",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
